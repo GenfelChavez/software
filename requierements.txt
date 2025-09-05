@@ -1,0 +1,8 @@
+django==5.2.6
+django-environ==0.12.0       // ocultar informacion
+django-cors-headers==4.7.0  //urls para tener control de que nadie acceda a los api con intenciones negativas
+djangorestframework==3.16.1
+pillow==11.3.0  //manejo de imagenes
+django-storages==1.14.6    //guardado de imagnes mas pesadas
+django-ckeditor==6.7.3   //texto en negras , fuentes
+psycopg2==2.9.10 //trabajar con base de datos sql postregs
