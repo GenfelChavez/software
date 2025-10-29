@@ -1,40 +1,54 @@
 
 //define las rutas a las cuales se dirige
 
-import { BrowserRouter as Router, Route,Routes} from 'react-router-dom'
+import { BrowserRouter as Router, Route,Routes,useLocation} from 'react-router-dom'
 
 
 import store from './store';
 import { Provider } from 'react-redux';
 
-import Error404 from 'containers/errors/Error404';
-import Home from 'containers/pages/Home';
-import Cases from 'containers/pages/Cases';
-import Services from 'containers/pages/Services';
-import About from 'containers/pages/About';
-import Coop from 'containers/pages/Coop';
-import Blog from 'containers/pages/Blog';
-import Contact from 'containers/pages/Contact';
+import {Helmet, HelmetProvider } from 'react-helmet-async';
+
+
+import AnimatedRoutes from 'Routes';
+
 
 function App() {
-  return (
-    <Provider store={store}>
-    <Router>
-      <Routes>
-        { /*Error Display */}
-        <Route path="*" element={<Error404 />}/>
 
-        { /*Home Display */}
-        <Route path="/" element={<Home />}/>
-        <Route path="/casos" element={<Cases />}/>
-        <Route path="/servicios" element={<Services />}/>
-        <Route path="/nosotros" element={<About />}/>
-        <Route path="/cooperativa" element={<Coop />}/>
-        <Route path="/blog" element={<Blog />}/>
-        <Route path="/contacto" element={<Contact />}/>
-      </Routes>
+
+
+  return (
+    <HelmetProvider> 
+      <Helmet>
+         <title>Zona Software S.R.L.</title>
+        <meta name="description" content="Empresa de software. Servicios en el   desarrollo de aplicaciones." />
+        <meta name="keywords" content='Empresa de software, , desarrollo de sistemas' />
+        <meta name="robots" content='all' />
+        <link rel="canonical" href="https://www.ZonaSoftware.com/" />
+        <meta name="author" content='ZonaSoftware' />
+        <meta name="publisher" content='ZonaSoftware' />
+
+        {/* Social Media Tags */}
+        <meta property="og:title" content='ZonaSoftware | Software Agency' />
+        <meta property="og:description" content='Empresa de software. Servicios en el   desarrollo de aplicaciones.' />
+        <meta property="og:url" content="https://www.ZonaSoftware.com/" />
+
+        <meta name="twitter:title" content=' ZonaSoftware | Software Agency' />
+        <meta
+            name="twitter:description"
+            content='Empresa de software. Servicios en el   desarrollo de aplicaciones.'
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+            </Helmet>
+       <Provider store={store}>
+    <Router>
+
+      <AnimatedRoutes/>
+     
     </Router>
     </Provider>
+    </HelmetProvider>
+   
   );
 }
 

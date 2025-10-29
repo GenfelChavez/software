@@ -11,21 +11,18 @@ function Header(){
             <div>
               <div>
                 <h1 className="text-4xl font-semibold tracking-tight pb-16 sm:text-7xl">
-                       Casos de estudio
+                       Software Development Services
                 </h1>
                 <p className="mt-6 text-2xl leading-8 text-white">
-                  Creamos soluciones tecnológicas innovadoras que impulsan a las empresas hacia la transformación digital. Nuestro enfoque en desarrollo de software combina calidad, 
-                  eficiencia y escalabilidad para ofrecer productos que generan impacto real en cada proyecto.
+                  Impulsamos la transformación digital de tu empresa con soluciones tecnológicas innovadoras.
+Nos especializamos en el desarrollo de software de alta calidad, eficiente y escalable, creando productos que generan un impacto real en cada proyecto.
                 </p>
-          
+              <div className="absolute inset-x-0 top-[calc(100%-20rem)] -z-10 transform-gpu overflow-hidden bg-white blur-lg lg:top-[calc(100%-45rem)] sm:top-[calc(100%-30rem)]">
               </div>
-                   
+              </div>
             </div>
-            
           </div>
-          
         </div>
-        
       </main>
     )
 

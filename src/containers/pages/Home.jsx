@@ -8,8 +8,13 @@ import NavBar from "components/navigation/Navbar"
 import Layout from "hocs/layouts/Layout"
 import LogoCloud from "components/Home/LogoCloud"
 import BlogList from "components/Home/BlogList"
+import {useEffect} from 'react'
+
 
 function Home(){
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
     return(
         <Layout>
             <NavBar/>

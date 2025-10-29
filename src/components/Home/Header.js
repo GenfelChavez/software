@@ -56,14 +56,21 @@ function Header(){
                   Creamos soluciones tecnológicas innovadoras que impulsan a las empresas hacia la transformación digital. Nuestro enfoque en desarrollo de software combina calidad, 
                   eficiencia y escalabilidad para ofrecer productos que generan impacto real en cada proyecto.
                 </p>
-          
-              <div className="absolute inset-x-0 top-[calc(100%-20rem)] -z-10 transform-gpu overflow-hidden bg-white blur-lg lg:top-[calc(100%-45rem)] sm:top-[calc(100%-30rem)]">
+        
+              </div>
+               <div className="absolute top-[calc(100%-20rem)] right-0 w-1/3 h-80 transform-gpu overflow-hidden bg-white blur-sm z-10
+                sm:top-[calc(100%-30rem)] lg:top-[calc(100%-45rem)] 
+                hidden lg:block">
+                <img src="codigoinicio.jpg" className="w-full h-full object-cover" />
+                  </div>
+              </div>
+                  
+   
+     
 
-              </div>
-              </div>
             </div>
           </div>
-        </div>
+     
       </main>
     )
 
